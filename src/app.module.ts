@@ -4,6 +4,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SharedModule } from './shared/shared.module';
 import { CharacterModule } from './character/character.module';
+import { EpisodeModule } from './episode/episode.module';
+import { LocationModule } from './location/location.module';
+
+const user = 'homer';
+const password = 'simpsons';
 
 @Module({
   imports: [
@@ -12,6 +17,8 @@ import { CharacterModule } from './character/character.module';
     ),
     SharedModule,
     CharacterModule,
+    EpisodeModule,
+    LocationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
